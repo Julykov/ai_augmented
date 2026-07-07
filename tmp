@@ -1,0 +1,7 @@
+Requirements:
+	User can add a product to the cart from the catalog page
+	The cart badge increments for each item added
+	Removing the last item hides the cart badge
+	
+	
+Read the output carefully. Check that every generated test case has a clear title, all fields filled, numbered steps that are individually actionable, and a single expected result per test case. If any field is vague or missing, that is a signal to tighten the instruction in the agent file.	
