@@ -1,0 +1,53 @@
+{
+
+  "inputs": [
+
+    {
+
+      "id": "jiraUsername",
+
+      "type": "promptString",
+
+      "description": "Jira account email (username)"
+
+    },
+
+    {
+
+      "id": "jiraApiToken",
+
+      "type": "promptString",
+
+      "description": "Jira API Token",
+
+      "password": true
+
+    }
+
+  ],
+
+  "servers": {
+
+    "mcp-atlassian": {
+
+      "command": "uvx",
+
+      "args": ["mcp-atlassian@latest"],
+
+      "env": {
+
+        "JIRA_URL": "https://dev-it-team.atlassian.net",
+
+        "JIRA_USERNAME": "${input:jiraUsername}",
+
+        "JIRA_API_TOKEN": "${input:jiraApiToken}",
+
+        "TOOLSETS": "all"
+
+      }
+
+    }
+
+  }
+
+}
